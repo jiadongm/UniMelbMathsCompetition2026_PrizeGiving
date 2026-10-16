@@ -1,0 +1,6 @@
+.DS_Store
+.Rhistory
+.quarto/
+slides_files/
+qa/
+__pycache__/

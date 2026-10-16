@@ -1,0 +1,43 @@
+:root { --ink: #24333d; --accent: #236779; --muted: #60737e; --orange: #e07b2c; --pale: #eef3f5; }
+.reveal { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 34px; color: var(--ink); }
+.reveal h1, .reveal h2, .reveal h3 { font-family: inherit; color: var(--ink); font-weight: 700; text-transform: none; }
+.reveal h1 { font-size: 2.0em; line-height: 1.1; }
+.reveal h2 { font-size: 1.5em; line-height: 1.15; margin-bottom: 0.45em; }
+.reveal .subtitle { color: var(--accent); font-size: 1.15em; }
+.reveal p { margin: 0.35em 0; line-height: 1.3; }
+.reveal strong { color: var(--accent); }
+.reveal img { margin: 0; object-fit: contain; }
+.reveal .center { text-align: center; }
+.reveal .lead { font-size: 1.05em; }
+.reveal .big { font-size: 1.25em; font-weight: 700; }
+.reveal .orange { color: var(--orange); font-weight: 700; }
+.reveal .muted { color: var(--muted); }
+.reveal .takeaway { background: var(--pale); border-left: 8px solid var(--accent); padding: 0.3em 0.7em; margin-top: 0.4em; font-weight: 600; }
+.reveal .source { position: absolute; bottom: 0; right: 0; font-size: 15px; color: var(--muted); text-align: right; }
+.reveal .source a { color: inherit; }
+.reveal .columns { gap: 1.2em; align-items: center; }
+
+/* tree counting table */
+.reveal table.count { margin: 0.2em auto 0; font-size: 0.95em; border-collapse: collapse; }
+.reveal table.count td, .reveal table.count th { padding: 0.18em 0.9em; border-bottom: 2px solid #d6dfe2; }
+.reveal table.count th { color: var(--accent); font-weight: 700; }
+.reveal table.count td:first-child { text-align: center; font-weight: 700; }
+.reveal table.count td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* why-it-matters cards */
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 0.4em; }
+.card { background: var(--pale); border-top: 10px solid var(--accent); border-radius: 14px; padding: 0.55em 0.6em; font-size: 0.82em; line-height: 1.3; min-height: 300px; }
+.card .card-title { font-size: 1.25em; font-weight: 700; margin: 0 0 0.35em; color: var(--accent); }
+.card.mine { border-top-color: var(--orange); }
+.card.mine .card-title { color: var(--orange); }
+
+.real-example { background: var(--pale); border-radius: 14px; padding: 0.6em 0.8em; font-size: 0.86em; }
+.real-example p { margin: 0.4em 0; }
+
+#title-slide { text-align: left; }
+#title-slide .title { font-size: 2.0em; }
+#title-slide .quarto-title-authors { justify-content: flex-start; margin-top: 1.4em; }
+.reveal .footer { font-size: 15px; color: var(--muted); }
+.reveal .slides svg[viewBox] { height: auto; max-width: 100%; }
+.reveal .r-stack > p, .reveal .r-stack > div > p { text-align: center; }
+.reveal .slides section > p:has(> svg) { text-align: center; }

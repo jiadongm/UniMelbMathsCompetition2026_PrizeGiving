@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 530" width="1170" height="530" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="308.6666666666667" y="275" width="278.00000000000006" height="225" rx="22" fill="#fdf0e5" stroke="#e07b2c" stroke-width="3" stroke-dasharray="10 7"/>
+<path d="M585.0,110 V125 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M310.33333333333337,165 V125 H859.6666666666667 V165" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M310.33333333333337,165 V215 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M173.0,255 V215 H447.6666666666667 V255" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M859.6666666666667,165 V215 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M722.3333333333334,255 V215 H997.0 V255" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M173.0,255 V300 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M104.33333333333334,340 V300 H241.66666666666669 V340" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M447.6666666666667,255 V300 " fill="none" stroke="#e07b2c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M379.0,340 V300 H516.3333333333334 V340" fill="none" stroke="#e07b2c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M722.3333333333334,255 V300 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M653.6666666666667,340 V300 H791.0 V340" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M997.0,255 V300 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M928.3333333333334,340 V300 H1065.6666666666667 V340" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M104.33333333333334,340 V420 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M70.0,436 V420 H138.66666666666669 V436" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M241.66666666666669,340 V420 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M207.33333333333334,436 V420 H276.0 V436" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M379.0,340 V420 " fill="none" stroke="#e07b2c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M344.6666666666667,436 V420 H413.33333333333337 V436" fill="none" stroke="#e07b2c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M516.3333333333334,340 V420 " fill="none" stroke="#e07b2c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M482.0,436 V420 H550.6666666666667 V436" fill="none" stroke="#e07b2c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M653.6666666666667,340 V420 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M619.3333333333334,436 V420 H688.0 V436" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M791.0,340 V420 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M756.6666666666667,436 V420 H825.3333333333334 V436" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M928.3333333333334,340 V420 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M894.0,436 V420 H962.6666666666667 V436" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1065.6666666666667,340 V420 " fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1031.3333333333335,436 V420 H1100.0 V436" fill="none" stroke="#4a5a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="585.0" cy="70" r="40" fill="#d9eef1" stroke="#236779" stroke-width="4"/><circle cx="585.0" cy="70" r="18.0" fill="#236779" opacity="0.75"/>
+<circle cx="70.0" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="70.0" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="138.66666666666669" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="138.66666666666669" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="207.33333333333334" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="207.33333333333334" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="276.0" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="276.0" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="344.6666666666667" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="344.6666666666667" cy="462" r="13.0" fill="#8f74c0"/>
+<polygon points="344.6666666666667,405.65 354.56666666666666,423.2 334.7666666666667,423.2" fill="#e07b2c" stroke="white" stroke-width="3"/>
+<circle cx="413.33333333333337" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="413.33333333333337" cy="462" r="13.0" fill="#8f74c0"/>
+<polygon points="413.33333333333337,405.65 423.23333333333335,423.2 403.4333333333334,423.2" fill="#e07b2c" stroke="white" stroke-width="3"/>
+<circle cx="482.0" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="482.0" cy="462" r="13.0" fill="#8f74c0"/>
+<polygon points="482.0,405.65 491.9,423.2 472.1,423.2" fill="#e07b2c" stroke="white" stroke-width="3"/>
+<circle cx="550.6666666666667" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="550.6666666666667" cy="462" r="13.0" fill="#8f74c0"/>
+<polygon points="550.6666666666667,405.65 560.5666666666667,423.2 540.7666666666668,423.2" fill="#e07b2c" stroke="white" stroke-width="3"/>
+<circle cx="619.3333333333334" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="619.3333333333334" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="688.0" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="688.0" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="756.6666666666667" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="756.6666666666667" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="825.3333333333334" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="825.3333333333334" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="894.0" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="894.0" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="962.6666666666667" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="962.6666666666667" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="1031.3333333333335" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="1031.3333333333335" cy="462" r="13.0" fill="#8f74c0"/>
+<circle cx="1100.0" cy="462" r="26" fill="#f1ecf8" stroke="#7a5ea8" stroke-width="2.0"/><circle cx="1100.0" cy="462" r="13.0" fill="#8f74c0"/>
+<polygon points="447.6666666666667,247.45 466.3666666666667,280.6 428.9666666666667,280.6" fill="#e07b2c" stroke="white" stroke-width="3"/>
+<text x="643.0" y="87" font-size="50" fill="#236779" text-anchor="start" font-weight="bold" >blood-making cell</text>
+<text x="481.6666666666667" y="201" font-size="50" fill="#e07b2c" text-anchor="start" font-weight="bold" >a DNA typo</text>
+<path d="M477.6666666666667,211 L457.6666666666667,249" fill="none" stroke="#e07b2c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

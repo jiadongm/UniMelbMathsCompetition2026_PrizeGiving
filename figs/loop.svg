@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" font-family="Helvetica Neue, Arial, sans-serif">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#236779"/></marker></defs>
+<path d="M435,92 A230,230 0 0 1 535,208" fill="none" stroke="#236779" stroke-width="5" marker-end="url(#arr)"/>
+<path d="M535,352 A230,230 0 0 1 445,470" fill="none" stroke="#236779" stroke-width="5" marker-end="url(#arr)"/>
+<path d="M195,470 A230,230 0 0 1 105,352" fill="none" stroke="#236779" stroke-width="5" marker-end="url(#arr)"/>
+<path d="M105,208 A230,230 0 0 1 205,92" fill="none" stroke="#236779" stroke-width="5" marker-end="url(#arr)"/>
+<rect x="208" y="12" width="224" height="116" rx="18" fill="#d9eef1" stroke="#236779" stroke-width="3"/>
+<text x="320" y="62" font-size="29" fill="#24333d" text-anchor="middle" font-weight="bold" >Look at</text>
+<text x="320" y="98" font-size="29" fill="#24333d" text-anchor="middle" font-weight="bold" >the clues</text>
+<rect x="413" y="222" width="224" height="116" rx="18" fill="#d9eef1" stroke="#236779" stroke-width="3"/>
+<text x="525" y="272" font-size="29" fill="#24333d" text-anchor="middle" font-weight="bold" >Guess</text>
+<text x="525" y="308" font-size="29" fill="#24333d" text-anchor="middle" font-weight="bold" >the rules</text>
+<rect x="208" y="432" width="224" height="116" rx="18" fill="#d9eef1" stroke="#236779" stroke-width="3"/>
+<text x="320" y="482" font-size="29" fill="#24333d" text-anchor="middle" font-weight="bold" >Run the rules</text>
+<text x="320" y="518" font-size="29" fill="#24333d" text-anchor="middle" font-weight="bold" >forward</text>
+<rect x="3" y="222" width="224" height="116" rx="18" fill="#d9eef1" stroke="#236779" stroke-width="3"/>
+<text x="115" y="272" font-size="29" fill="#24333d" text-anchor="middle" font-weight="bold" >Check:</text>
+<text x="115" y="308" font-size="29" fill="#24333d" text-anchor="middle" font-weight="bold" >does it match?</text>
+<text x="320" y="274" font-size="25" fill="#60737e" text-anchor="middle" font-weight="normal" >keep the</text>
+<text x="320" y="306" font-size="25" fill="#60737e" text-anchor="middle" font-weight="normal" >explanations</text>
+<text x="320" y="338" font-size="25" fill="#60737e" text-anchor="middle" font-weight="normal" >that fit</text>
+</svg>

@@ -1,0 +1,409 @@
+---
+title: "The hidden family trees in your blood"
+subtitle: "How maths recover blood cells' family history"
+author: "Dr Jiadong Mao"
+institute: "Lecturer in Statistics, University of Melbourne"
+date: "17 October 2026"
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: simple
+    css: styles.css
+    width: 1280
+    height: 720
+    margin: 0.05
+    slide-number: false
+    slide-level: 2
+    auto-stretch: false
+    transition: none
+    center: false
+    embed-resources: true
+    navigation-mode: linear
+    controls: false
+    progress: true
+    footer: "UniMelb Maths Competition 2026 Prize-giving"
+    title-slide-attributes:
+      data-background-color: "#eef3f5"
+---
+
+
+
+
+
+## Who is your closest relative?
+
+::: {.columns}
+::: {.column width="62%"}
+![](figs/human-tree.svg){width="100%" fig-alt="A human family tree: grandparents at the top, then your parents and your aunt and uncle, then you, your sibling and two cousins."}
+:::
+
+::: {.column width="35%"}
+<p class="big">Your sibling or your cousin?</p>
+
+::: {.fragment}
+Closer relatives share a **more recent** ancestor.
+:::
+
+::: {.fragment .takeaway}
+People keep names, photos and memories. Cells keep no records, only clues.
+:::
+:::
+:::
+
+::: {.source}
+Simplified family tree
+:::
+
+::: {.notes}
+[0:00–1:00]
+
+I want to start with something you already know: a family tree. Here are your grandparents, your parents, your aunt and uncle, and you, your sibling and your cousins.
+
+Quick question: who is your closer relative, your sibling or your cousin? [Pause.]
+
+[Click.] Your sibling. You share the same parents, but your cousin only shares your grandparents. Closer relatives share a more recent ancestor. Keep that idea in mind; it is the key to the whole talk.
+
+[Click.] For people, drawing this tree is easy: we have names, photos, birth certificates, and Grandma's memory. But your body is full of cells that have family trees too, and nobody kept any records.
+
+(One difference, if asked: a cell has just one parent, because it was made by one cell splitting in two.)
+:::
+
+## Your blood has a family tree
+
+![](figs/lookalikes.svg){width="100%" fig-alt="Six white blood cells that look almost identical."}
+
+- White blood cells: fighting invading bacteria and viruses
+- Every one of these cells came from another cell
+- Just like people, they have a family tree
+
+::: {.center .big}
+Which ones are **close relatives**?
+:::
+
+::: {.notes}
+[1:00–1:40]
+
+Now look at these. They are white blood cells, the cells that fight infection. You have billions of them, and they look almost the same.
+
+But every one of them came from another cell that split in two. So, just like people, your cells have a family tree. Some are close cousins; some are very distant relatives.
+
+The catch: nobody was watching when they divided. Can we still work out the family tree? That is the puzzle I want to solve with you today.
+:::
+
+
+
+
+## From one cell to a whole family
+
+![](figs/family.svg){width="42%" fig-alt="A family tree: one blood-making cell at the top divides repeatedly into sixteen white blood cells. A DNA typo on one branch is inherited by the four cells below it, which form one cell family."}
+
+- When cells divide themselves to produce children, they create two copies of everything
+- Including DNA – blue maps for making things cells need
+- But cells make mistakes when copying
+
+::: {.takeaway}
+A DNA typo is copied into **every descendant**: a clue to who is related.
+:::
+
+
+
+::: {.notes}
+[1:40–2:40]
+
+Deep in your bones, in the bone marrow, live blood-making cells. Scientists call them stem cells. Each can divide again and again, and its descendants end up in your blood.
+
+Every cell carries DNA, the cell's instruction book, billions of letters long. Each time a cell divides it copies the whole book, and now and then it makes a tiny typo. Most typos do nothing at all.
+
+But here is the useful part. Once a typo appears, it is copied into every descendant of that cell. So all four cells under this orange mark carry it.
+
+All the cells that came from one ancestor form a *cell family*. Biologists call it a clone. A cell family is not a disease; it is just a branch of the tree. And the typos work like a surname handed down a family.
+
+(Teachers: the "typos" are naturally occurring somatic mutations.)
+:::
+
+
+
+
+
+
+
+## Puzzle: who are the closest relatives?
+
+::: {.r-stack}
+![](figs/puzzle.svg){width="86%" fig-alt="Four white blood cells A to D. A: circle, triangle. B: circle, triangle, star. C: circle, square. D: circle, square, diamond."}
+
+
+
+
+::: {.fragment}
+![](figs/puzzle-tree.svg){width="86%" fig-alt="The answer: A and B are siblings, C and D are siblings. The circle sits on the root, the triangle on the A–B branch, the square on the C–D branch, the star only on B and the diamond only on D."}
+:::
+:::
+
+::: {.fragment .takeaway .center}
+Shared typos reveal relatives.
+:::
+
+
+
+::: {.notes}
+[2:40–4:05]
+
+Here are four white blood cells, A, B, C and D. Under each one are the DNA typos we found when we read its DNA; each shape is a different typo.
+
+Which two cells are the closest relatives? Take 20 seconds and talk to your neighbour.
+
+[Pause ~20 s.]
+
+Who said A and B? C and D? Anyone say B and D, because they both have an extra mark? That is the trap!
+
+[Click.] The blue circle is in everyone, so it happened in a very early ancestor. The orange triangle is shared by A and B, so it happened in *their* shared ancestor; the green square, likewise, for C and D. The star is only in B, so it happened after B's branch split off.
+
+[Click.] So shared marks reveal relatives. A private mark tells us that cell kept dividing on its own, but nothing about who it is related to.
+:::
+
+
+
+
+
+
+
+
+## How many family trees are possible?
+
+::: {.columns}
+::: {.column width="56%"}
+| Cells | Possible family trees |
+|:---:|---:|
+| 3 | 3 |
+| 4 | 15 |
+| 10 | 34,459,425 |
+| 20 | 8,200,794,532,637,891,559,375 |
+: {.count}
+:::
+
+::: {.column width="40%"}
+::: {.fragment}
+Real studies read the DNA of **hundreds** of cells per person.
+
+We need clever maths to find the best tree **without checking them all**.
+:::
+:::
+:::
+
+::: {.fragment .takeaway}
+Challenge for the trip home: why does each new cell multiply the count by 3, then 5, then 7, …?
+:::
+
+::: {.source}
+Counts family trees where every split is into two, with labelled cells (Felsenstein, *Systematic Zoology* 1978)
+:::
+
+::: {.notes}
+[4:05–4:55]
+
+With four cells you can do it in your head. But how many possible family trees are there?
+
+With 3 cells, 3 trees. With 4 cells, 15. With 10 cells, about 34 million. With 20 cells, about 8 sextillion: an 8 followed by 21 more digits.
+
+[Click.] Real studies read the DNA of hundreds of cells from each person. So nobody, not even a supercomputer, can check every tree one by one. We need clever mathematics to find the best tree without checking them all.
+
+[Click.] A challenge for the trip home: why does each new cell multiply the count by 3, then 5, then 7? Hint: count the places where a new cell could join the tree.
+
+(Answer for teachers: a rooted tree with k cells has 2k − 1 branches, including the stem above the root, so the next cell can attach in 2k − 1 ways; the count is (2n − 3)!!.)
+:::
+
+
+
+
+
+
+
+
+
+
+## What do real family trees show?
+
+![](figs/young-old.svg){width="94%" fig-alt="Two family trees of 24 white blood cells, drawn from birth at the top to now at the bottom. Younger adult: every cell sits on its own branch, so many small families share the work. Over 75: three coloured families of five, three and two cells branch off partway down, so a few big families make much of the blood."}
+
+::: {.takeaway .center}
+With age, a few families make a **much bigger share** of the blood. Why?
+:::
+
+::: {.source}
+Simplified illustration based on [Mitchell et al., *Nature* 2022](https://www.nature.com/articles/s41586-022-04786-y)
+:::
+
+::: {.notes}
+[4:55–5:45]
+
+So why draw the tree at all? Because its shape shows how your body makes blood.
+
+When scientists drew real trees, younger adults had bushy ones [point left]: 20,000 to 200,000 blood-making cells, all sharing the work evenly.
+
+In people over 75 [point right], just 12 to 18 families made 30 to 60 per cent of the blood.
+
+Most DNA typos are harmless clues, like a surname. But a few might change how a cell behaves, and one open question is whether such typos help some families take a bigger share.
+
+So why did a few families get so big? Before we answer, here is a trap.
+
+(Source detail, Mitchell et al. 2022 abstract: adults under 65 had a stable population of 20,000–200,000 stem and multipotent progenitor cells contributing evenly; in each subject over 75, 12–18 independent clones accounted for 30–60% of haematopoiesis; most expanded clones had begun expanding before age 40 (a fact the tree's branch points reveal), and only 22% carried known driver mutations. The 24-cell trees are invented for illustration.)
+:::
+
+## A percentage puzzle
+
+::: {.columns}
+::: {.column width="44%" .center}
+**Before**
+
+![](figs/share-before.svg){width="54%" fig-alt="100 dots, 25 of them orange."}
+
+<span class="orange">25</span> of 100 cells = <span class="orange">25%</span>
+:::
+
+::: {.column width="52%" .center}
+**Later**
+
+::: {.r-stack}
+::: {.fragment .fade-out fragment-index="1"}
+The orange family is now <span class="orange">50%</span>.
+
+<p class="big">Did it make more cells?</p>
+:::
+
+::: {.fragment fragment-index="1"}
+![](figs/share-after.svg){width="56%" fig-alt="50 dots, 25 of them orange."}
+
+<span class="orange">25</span> of 50 cells = <span class="orange">50%</span>
+
+Same number, bigger share!
+:::
+:::
+:::
+:::
+
+::: {.fragment .takeaway .center}
+Or: orange grows to 75 while the rest stay at 75. Also 50%! A share alone can't tell these stories apart.
+:::
+
+::: {.source}
+Made-up numbers
+:::
+
+::: {.notes}
+[5:45–6:45]
+
+Here is the trap, as a quick puzzle. Imagine 100 blood cells, and 25 of them belong to the orange family: 25%.
+
+Years later we look again, and the orange family is 50% of the blood. Hands up if you think the orange family must have made more cells?
+
+[Click.] Not necessarily! The orange family could still have exactly 25 cells, while the other cells dropped from 75 to 25. Now orange is 25 out of 50: 50%. Its number did not change; its share did.
+
+[Click.] And a completely different story: orange grows to 75 while the others stay at 75. Also 50%.
+
+Two very different histories, same percentage. Often we can measure only a share, not a count. So when a few families make a bigger share in older people, we cannot yet say whether they grew or the others faded.
+:::
+
+## How do we find out which story is true?
+
+::: {.columns}
+::: {.column width="50%"}
+![](figs/loop.svg){width="100%" fig-alt="A loop of four steps: look at the clues, guess the rules, run the rules forward, check whether it matches; keep the explanations that fit."}
+:::
+
+::: {.column width="47%"}
+::: {.fragment .real-example}
+**Our question**
+
+Why do a few cell families make so much of the blood in older people?
+
+- Did they grow faster?
+- Did the other families fade?
+- Did a DNA typo help them?
+:::
+:::
+:::
+
+::: {.notes}
+[6:45–7:50]
+
+So how do researchers decide? We go round a loop, and it is the same loop you use on a competition problem.
+
+Look at the clues: the typos in each cell, and how big each family's share is.
+
+Guess the rules: how often do blood-making cells divide? Do some families have an advantage? Do some cells stop working as we age?
+
+Run the rules forward: a computer plays out the history of the blood thousands of times under each guess.
+
+Check: does the pretend history leave clues that look like the real ones? Keep the explanations that fit, throw away the ones that don't, and go round again.
+
+[Click.] For older people's blood, each story here is a different guess. Each leaves different clues in the family tree, so we run each one forward and see which fits. The share alone cannot decide; the shape of the tree can help.
+
+(Source detail: Mitchell et al. 2022 read the DNA of 3,579 colonies, each grown from a single blood-making cell, from 10 people aged 0–81. In their abstract, computer runs with a constant stem-cell population and a steady supply of typos that give a moderate advantage explained the change seen in older people.)
+:::
+
+## Why it matters
+
+::: {.cards}
+::: {.card}
+<p class="card-title">Growing older</p>
+
+Why does blood change with age?
+
+In their 70s, about **1 in 10** people has a cell family large enough to detect.
+:::
+
+::: {.card .mine}
+<p class="card-title">Recovering</p>
+
+How does blood **rebuild itself** after a bone marrow transplant?
+
+A question in my own research.
+:::
+
+::: {.card}
+<p class="card-title">Risk</p>
+
+Which patterns are **linked** to blood cancer?
+
+A pattern across many people, not a forecast for one person.
+:::
+:::
+
+::: {.takeaway .center}
+Maths turns a few clues into explanations we can test.
+:::
+
+::: {.source}
+1 in 10 and cancer link: [Jaiswal et al., *New England Journal of Medicine* 2014](https://pubmed.ncbi.nlm.nih.gov/25426837/)
+:::
+
+::: {.notes}
+[7:50–9:00]
+
+Why does this matter?
+
+Growing older: in people in their seventies, about one in ten has a cell family large enough to spot with standard DNA tests. Understanding why tells us how our bodies age.
+
+Recovering: in a bone marrow transplant, a small number of donated blood-making cells must rebuild an entire blood system. In my own research I ask how those cell families grow and share the work as the blood rebuilds. It is still an open question.
+
+Risk: across large groups of people, having a large cell family is linked to a higher chance of blood cancer later on. That is a pattern across many people, not a forecast for any one person.
+
+So whether it is a competition problem or a mystery in your blood, the skills are the same: collect the clues, propose an explanation, test it, and be honest about what the clues cannot tell you.
+
+(Source detail: Jaiswal et al. 2014 found detectable mutations in 9.5% of people aged 70–79, 11.7% aged 80–89 and 18.4% aged 90–108; they were associated with higher risk of blood cancer, hazard ratio 11.1.)
+:::
+
+## {background-color="#eef3f5"}
+
+::: {.center style="margin-top: 200px;"}
+<p style="font-size: 2.4em; font-weight: 700; color: #236779;">Congratulations!</p>
+
+<p style="font-size: 1.2em;">to all of this year's prize winners</p>
+:::
+
+::: {.notes}
+Stays up during the prize presentation.
+
+Congratulations to everyone here today. I can't wait to see which mysteries you solve next. It is now my pleasure to present the prizes for [division].
+:::
