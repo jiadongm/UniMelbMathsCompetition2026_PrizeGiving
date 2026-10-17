@@ -169,62 +169,6 @@ Who said A and B? C and D? Anyone say B and D, because they both have an extra m
 
 
 
-
-
-
-## How many family trees are possible?
-
-::: {.columns}
-::: {.column width="56%"}
-| Cells | Possible family trees |
-|:---:|---:|
-| 3 | 3 |
-| 4 | 15 |
-| 10 | 34,459,425 |
-| 20 | 8,200,794,532,637,891,559,375 |
-: {.count}
-:::
-
-::: {.column width="40%"}
-::: {.fragment}
-Real studies read the DNA of **hundreds** of cells per person.
-
-Even the most powerful super-computers cannot check them all.
-:::
-:::
-:::
-
-::: {.fragment .takeaway}
-We need clever maths – phylogenetics.
-:::
-
-::: {.source}
-Counts family trees where every split is into two, with labelled cells (Felsenstein, *Systematic Zoology* 1978)
-:::
-
-::: {.notes}
-[4:05–4:55]
-
-With four cells you can do it in your head. But how many possible family trees are there?
-
-With 3 cells, 3 trees. With 4 cells, 15. With 10 cells, about 34 million. With 20 cells, about 8 sextillion: an 8 followed by 21 more digits.
-
-[Click.] Real studies read the DNA of hundreds of cells from each person. So nobody, not even a supercomputer, can check every tree one by one. We need clever mathematics to find the best tree without checking them all.
-
-[Click.] A challenge for the trip home: why does each new cell multiply the count by 3, then 5, then 7? Hint: count the places where a new cell could join the tree.
-
-(Answer for teachers: a rooted tree with k cells has 2k − 1 branches, including the stem above the root, so the next cell can attach in 2k − 1 ways; the count is (2n − 3)!!.)
-:::
-
-
-
-
-
-
-
-
-
-
 ## What do we care about family trees?
 
 ![](figs/young-old.svg){width="94%" fig-alt="Two family trees of 24 white blood cells, drawn from birth at the top to now at the bottom. Younger adult: every cell sits on its own branch, so many small families share the work. Over 75: three coloured families of five, three and two cells branch off partway down, so a few big families make much of the blood."}
@@ -384,8 +328,7 @@ Will the family with the helpful typo take over? Hands up for yes. [Pause.]
 ::: {.column width="50%"}
 - Melbourne Integrative Genomics (MIG)
 - We solve different kinds of maths and stats problems in biology
-- Yao-ban is the phylogenetics expert (family trees)
-- Jiadong works on blood cancers, blood transplantation, brain conditions
+- We work on big data from biology 
 - We also work on bacteria (in gut, in soil), forensic statistics (bad guys leave traces too), even quantum computing
 :::
 :::
