@@ -263,28 +263,24 @@ So why did a few families get so big? We will come back to that with a game.
 
 Why does blood change with age?
 
-In their 70s, about **1 in 10** people has a cell family large enough to detect.
 :::
 
 ::: {.card .mine}
 <p class="card-title">Recovering</p>
 
-How does blood **rebuild itself** after a bone marrow transplant?
+How does blood **rebuild itself** after a blood transplant?
 
-A question in my own research.
 :::
 
 ::: {.card}
-<p class="card-title">Risk</p>
+<p class="card-title">Cancer risk</p>
 
-Which patterns are **linked** to blood cancer?
-
-A pattern across many people, not a forecast for one person.
+Which families are **linked** to blood cancer?
 :::
 :::
 
 ::: {.takeaway .center}
-Maths turns a few clues into explanations we can test.
+Maths and stats turns clues into explanations we can test.
 :::
 
 ::: {.source}
@@ -311,18 +307,21 @@ So whether it is a competition problem or a mystery in your blood, the skills ar
 
 
 
+
+
+
+
 ## An evolutionary game
 
 ::: {.columns}
 ::: {.column width="40%"}
 ::: {.rules}
-**Rules** (100 blood-making cells)
+**Rules**
 
-1. Each turn, one cell is lost.
-2. A copy of another cell replaces it.
-3. Cells with a helpful typo are copied a bit more often: 11 for every 10.
-
-**Fitness:** how fast a family grows compared with the others.
+1. Suppose can only maintain 100 blood cells – limited space and resource.
+1. When one cell dies, another new one fills in.
+1. Different families competing.
+1. Cells with a helpful typo (lucky cells) can divide a bit more often – say 10% more often than others.
 :::
 :::
 
@@ -331,7 +330,7 @@ So whether it is a competition problem or a mystery in your blood, the skills ar
 ::: {.fragment .fade-out fragment-index="1"}
 <p class="big">One cell gets a helpful typo.</p>
 
-<p class="big">Will its family take over?</p>
+<p class="big">Will its family take over? (20 simulations)</p>
 :::
 
 ::: {.fragment fragment-index="1"}
@@ -342,12 +341,9 @@ So whether it is a competition problem or a mystery in your blood, the skills ar
 :::
 
 ::: {.fragment .takeaway .center}
-Luck picks the survivors. A small edge makes them huge.
+A small advantage may make you hugely successful family, but not always (that's life – keep trying!).
 :::
 
-::: {.source}
-Computer runs of a simple model (illustrative)
-:::
 
 ::: {.notes}
 [5:45–6:45]
@@ -365,43 +361,12 @@ Will the family with the helpful typo take over? Hands up for yes. [Pause.]
 (Teachers: this is a Moran process with N = 100 and relative fitness r = 1.1. The chance of taking over is (1 − 1/r)/(1 − 1/r^N), about 1 − 1/r ≈ 9%. The random seed was chosen to show 2 takeovers in 20 runs, close to the expected 1.8. In real blood a family rarely takes over everything: many families compete and new typos keep arriving. Mitchell et al. 2022 report that simulations with a constant stem-cell population and a steady supply of moderately helpful typos fully explained the change seen in older people. A bigger share alone does not prove a family is fitter; luck alone can also make a family big.)
 :::
 
-## How do we find out which story is true?
 
-::: {.columns}
-::: {.column width="50%"}
-![](figs/loop.svg){width="100%" fig-alt="A loop of four steps: look at the clues, guess the rules, run the rules forward, check whether it matches; keep the explanations that fit."}
-:::
 
-::: {.column width="47%"}
-::: {.fragment .real-example}
-**Our question**
 
-Why do a few cell families make so much of the blood in older people?
 
-- Did they grow faster?
-- Did the other families fade?
-- Did a DNA typo help them?
-:::
-:::
-:::
 
-::: {.notes}
-[6:45–7:50]
 
-So how do researchers decide? We go round a loop, and it is the same loop you use on a competition problem.
-
-Look at the clues: the typos in each cell, and how big each family's share is.
-
-Guess the rules: how often do blood-making cells divide? Do some families have an advantage? Do some cells stop working as we age?
-
-Run the rules forward: a computer plays out the history of the blood thousands of times under each guess.
-
-Check: does the pretend history leave clues that look like the real ones? Keep the explanations that fit, throw away the ones that don't, and go round again.
-
-[Click.] For older people's blood, each story here is a different guess. Each leaves different clues in the family tree, so we run each one forward and see which fits. The share alone cannot decide; the shape of the tree can help.
-
-(Source detail: Mitchell et al. 2022 read the DNA of 3,579 colonies, each grown from a single blood-making cell, from 10 people aged 0–81. In their abstract, computer runs with a constant stem-cell population and a steady supply of typos that give a moderate advantage explained the change seen in older people.)
-:::
 
 
 
@@ -421,7 +386,7 @@ Check: does the pretend history leave clues that look like the real ones? Keep t
 - We solve different kinds of maths and stats problems in biology
 - Yao-ban is the phylogenetics expert (family trees)
 - Jiadong works on blood cancers, blood transplantation, brain conditions
-- We also work on bacteria (in gut, in soil), forensic statistics (bad guys leave traces too), even quantum computing (Kim-Anh)
+- We also work on bacteria (in gut, in soil), forensic statistics (bad guys leave traces too), even quantum computing
 :::
 :::
 
