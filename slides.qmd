@@ -45,7 +45,7 @@ Closer relatives share a **more recent** ancestor.
 :::
 
 ::: {.fragment .takeaway}
-People keep names, photos and memories. Cells keep no records, only clues.
+People keep names, photos and memories. But what about cells?
 :::
 :::
 :::
@@ -68,7 +68,10 @@ Quick question: who is your closer relative, your sibling or your cousin? [Pause
 (One difference, if asked: a cell has just one parent, because it was made by one cell splitting in two.)
 :::
 
-## Your blood has a family tree
+
+
+
+## Your blood also has a family tree
 
 ![](figs/lookalikes.svg){width="100%" fig-alt="Six white blood cells that look almost identical."}
 
@@ -95,9 +98,9 @@ The catch: nobody was watching when they divided. Can we still work out the fami
 
 ## From one cell to a whole family
 
-![](figs/family.svg){width="42%" fig-alt="A family tree: one blood-making cell at the top divides repeatedly into sixteen white blood cells. A DNA typo on one branch is inherited by the four cells below it, which form one cell family."}
+![](figs/family.svg){width="50%" fig-alt="A family tree: one blood-making cell at the top divides repeatedly into sixteen white blood cells. A DNA typo on one branch is inherited by the four cells below it, which form one cell family."}
 
-- When cells divide themselves to produce children, they create two copies of everything
+- When cells divide to produce children, they create two copies of everything
 - Including DNA – blue maps for making things cells need
 - But cells make mistakes when copying
 
@@ -186,13 +189,13 @@ Who said A and B? C and D? Anyone say B and D, because they both have an extra m
 ::: {.fragment}
 Real studies read the DNA of **hundreds** of cells per person.
 
-We need clever maths to find the best tree **without checking them all**.
+Even the most powerful super-computers cannot check them all.
 :::
 :::
 :::
 
 ::: {.fragment .takeaway}
-Challenge for the trip home: why does each new cell multiply the count by 3, then 5, then 7, …?
+We need clever maths – phylogenetics.
 :::
 
 ::: {.source}
@@ -222,7 +225,7 @@ With 3 cells, 3 trees. With 4 cells, 15. With 10 cells, about 34 million. With 2
 
 
 
-## What do real family trees show?
+## What do we care about family trees?
 
 ![](figs/young-old.svg){width="94%" fig-alt="Two family trees of 24 white blood cells, drawn from birth at the top to now at the bottom. Younger adult: every cell sits on its own branch, so many small families share the work. Over 75: three coloured families of five, three and two cells branch off partway down, so a few big families make much of the blood."}
 
@@ -245,104 +248,14 @@ In people over 75 [point right], just 12 to 18 families made 30 to 60 per cent o
 
 Most DNA typos are harmless clues, like a surname. But a few might change how a cell behaves, and one open question is whether such typos help some families take a bigger share.
 
-So why did a few families get so big? Before we answer, here is a trap.
+So why did a few families get so big? We will come back to that with a game.
 
 (Source detail, Mitchell et al. 2022 abstract: adults under 65 had a stable population of 20,000–200,000 stem and multipotent progenitor cells contributing evenly; in each subject over 75, 12–18 independent clones accounted for 30–60% of haematopoiesis; most expanded clones had begun expanding before age 40 (a fact the tree's branch points reveal), and only 22% carried known driver mutations. The 24-cell trees are invented for illustration.)
 :::
 
-## A percentage puzzle
 
-::: {.columns}
-::: {.column width="44%" .center}
-**Before**
 
-![](figs/share-before.svg){width="54%" fig-alt="100 dots, 25 of them orange."}
-
-<span class="orange">25</span> of 100 cells = <span class="orange">25%</span>
-:::
-
-::: {.column width="52%" .center}
-**Later**
-
-::: {.r-stack}
-::: {.fragment .fade-out fragment-index="1"}
-The orange family is now <span class="orange">50%</span>.
-
-<p class="big">Did it make more cells?</p>
-:::
-
-::: {.fragment fragment-index="1"}
-![](figs/share-after.svg){width="56%" fig-alt="50 dots, 25 of them orange."}
-
-<span class="orange">25</span> of 50 cells = <span class="orange">50%</span>
-
-Same number, bigger share!
-:::
-:::
-:::
-:::
-
-::: {.fragment .takeaway .center}
-Or: orange grows to 75 while the rest stay at 75. Also 50%! A share alone can't tell these stories apart.
-:::
-
-::: {.source}
-Made-up numbers
-:::
-
-::: {.notes}
-[5:45–6:45]
-
-Here is the trap, as a quick puzzle. Imagine 100 blood cells, and 25 of them belong to the orange family: 25%.
-
-Years later we look again, and the orange family is 50% of the blood. Hands up if you think the orange family must have made more cells?
-
-[Click.] Not necessarily! The orange family could still have exactly 25 cells, while the other cells dropped from 75 to 25. Now orange is 25 out of 50: 50%. Its number did not change; its share did.
-
-[Click.] And a completely different story: orange grows to 75 while the others stay at 75. Also 50%.
-
-Two very different histories, same percentage. Often we can measure only a share, not a count. So when a few families make a bigger share in older people, we cannot yet say whether they grew or the others faded.
-:::
-
-## How do we find out which story is true?
-
-::: {.columns}
-::: {.column width="50%"}
-![](figs/loop.svg){width="100%" fig-alt="A loop of four steps: look at the clues, guess the rules, run the rules forward, check whether it matches; keep the explanations that fit."}
-:::
-
-::: {.column width="47%"}
-::: {.fragment .real-example}
-**Our question**
-
-Why do a few cell families make so much of the blood in older people?
-
-- Did they grow faster?
-- Did the other families fade?
-- Did a DNA typo help them?
-:::
-:::
-:::
-
-::: {.notes}
-[6:45–7:50]
-
-So how do researchers decide? We go round a loop, and it is the same loop you use on a competition problem.
-
-Look at the clues: the typos in each cell, and how big each family's share is.
-
-Guess the rules: how often do blood-making cells divide? Do some families have an advantage? Do some cells stop working as we age?
-
-Run the rules forward: a computer plays out the history of the blood thousands of times under each guess.
-
-Check: does the pretend history leave clues that look like the real ones? Keep the explanations that fit, throw away the ones that don't, and go round again.
-
-[Click.] For older people's blood, each story here is a different guess. Each leaves different clues in the family tree, so we run each one forward and see which fits. The share alone cannot decide; the shape of the tree can help.
-
-(Source detail: Mitchell et al. 2022 read the DNA of 3,579 colonies, each grown from a single blood-making cell, from 10 people aged 0–81. In their abstract, computer runs with a constant stem-cell population and a steady supply of typos that give a moderate advantage explained the change seen in older people.)
-:::
-
-## Why it matters
+## 
 
 ::: {.cards}
 ::: {.card}
@@ -393,6 +306,129 @@ So whether it is a competition problem or a mystery in your blood, the skills ar
 
 (Source detail: Jaiswal et al. 2014 found detectable mutations in 9.5% of people aged 70–79, 11.7% aged 80–89 and 18.4% aged 90–108; they were associated with higher risk of blood cancer, hazard ratio 11.1.)
 :::
+
+
+
+
+
+## An evolutionary game
+
+::: {.columns}
+::: {.column width="40%"}
+::: {.rules}
+**Rules** (100 blood-making cells)
+
+1. Each turn, one cell is lost.
+2. A copy of another cell replaces it.
+3. Cells with a helpful typo are copied a bit more often: 11 for every 10.
+
+**Fitness:** how fast a family grows compared with the others.
+:::
+:::
+
+::: {.column width="57%"}
+::: {.r-stack}
+::: {.fragment .fade-out fragment-index="1"}
+<p class="big">One cell gets a helpful typo.</p>
+
+<p class="big">Will its family take over?</p>
+:::
+
+::: {.fragment fragment-index="1"}
+![](figs/game.svg){width="90%" fig-alt="Twenty computer runs of the game. Each line is the share of the blood made by the family with the helpful typo. Eighteen lines drop to zero early; two rise to 100%."}
+:::
+:::
+:::
+:::
+
+::: {.fragment .takeaway .center}
+Luck picks the survivors. A small edge makes them huge.
+:::
+
+::: {.source}
+Computer runs of a simple model (illustrative)
+:::
+
+::: {.notes}
+[5:45–6:45]
+
+So why did a few families get so big? Let's play a game. Mathematicians call games like this evolutionary games.
+
+Imagine 100 blood-making cells. Each turn, one cell is lost, and a copy of another cell takes its place. Most cells are equal. But one cell has a helpful typo, so it gets copied a bit more often: 11 times for every 10. That edge is what biologists call fitness.
+
+Will the family with the helpful typo take over? Hands up for yes. [Pause.]
+
+[Click.] Here are 20 computer runs of this game. In 18 of them the family vanished! It starts as just one cell, and one unlucky turn wipes it out. Only 2 took over. The maths says the chance is about 1 in 11.
+
+[Click.] So luck decides who gets started. But once a family survives its risky start, its small edge, repeated for decades, makes it huge. When scientists played this kind of game over a whole human lifetime, with helpful typos turning up now and then, it explained the big families in older people's blood.
+
+(Teachers: this is a Moran process with N = 100 and relative fitness r = 1.1. The chance of taking over is (1 − 1/r)/(1 − 1/r^N), about 1 − 1/r ≈ 9%. The random seed was chosen to show 2 takeovers in 20 runs, close to the expected 1.8. In real blood a family rarely takes over everything: many families compete and new typos keep arriving. Mitchell et al. 2022 report that simulations with a constant stem-cell population and a steady supply of moderately helpful typos fully explained the change seen in older people. A bigger share alone does not prove a family is fitter; luck alone can also make a family big.)
+:::
+
+## How do we find out which story is true?
+
+::: {.columns}
+::: {.column width="50%"}
+![](figs/loop.svg){width="100%" fig-alt="A loop of four steps: look at the clues, guess the rules, run the rules forward, check whether it matches; keep the explanations that fit."}
+:::
+
+::: {.column width="47%"}
+::: {.fragment .real-example}
+**Our question**
+
+Why do a few cell families make so much of the blood in older people?
+
+- Did they grow faster?
+- Did the other families fade?
+- Did a DNA typo help them?
+:::
+:::
+:::
+
+::: {.notes}
+[6:45–7:50]
+
+So how do researchers decide? We go round a loop, and it is the same loop you use on a competition problem.
+
+Look at the clues: the typos in each cell, and how big each family's share is.
+
+Guess the rules: how often do blood-making cells divide? Do some families have an advantage? Do some cells stop working as we age?
+
+Run the rules forward: a computer plays out the history of the blood thousands of times under each guess.
+
+Check: does the pretend history leave clues that look like the real ones? Keep the explanations that fit, throw away the ones that don't, and go round again.
+
+[Click.] For older people's blood, each story here is a different guess. Each leaves different clues in the family tree, so we run each one forward and see which fits. The share alone cannot decide; the shape of the tree can help.
+
+(Source detail: Mitchell et al. 2022 read the DNA of 3,579 colonies, each grown from a single blood-making cell, from 10 people aged 0–81. In their abstract, computer runs with a constant stem-cell population and a steady supply of typos that give a moderate advantage explained the change seen in older people.)
+:::
+
+
+
+
+
+
+
+## Who to talk to: MIG people
+
+::: {.columns}
+::: {.column width="50%"}
+![](figs/MIG_people.png){width="100%"}
+:::
+
+::: {.column width="50%"}
+- Melbourne Integrative Genomics (MIG)
+- We solve different kinds of maths and stats problems in biology
+- Yao-ban is the phylogenetics expert (family trees)
+- Jiadong works on blood cancers, blood transplantation, brain conditions
+- We also work on bacteria (in gut, in soil), forensic statistics (bad guys leave traces too), even quantum computing (Kim-Anh)
+:::
+:::
+
+
+
+
+
 
 ## {background-color="#eef3f5"}
 

@@ -41,3 +41,6 @@
 .reveal .slides svg[viewBox] { height: auto; max-width: 100%; }
 .reveal .r-stack > p, .reveal .r-stack > div > p { text-align: center; }
 .reveal .slides section > p:has(> svg) { text-align: center; }
+.reveal .rules { font-size: 0.8em; background: var(--pale); border-radius: 14px; padding: 0.4em 0.7em; }
+.reveal .rules ol { margin: 0.2em 0 0 1.1em; }
+.reveal .rules li { margin-bottom: 0.25em; }

@@ -290,17 +290,59 @@ def fig_young_old():
     return svg(W, H, "\n".join(body))
 
 
-# Slide 5: share versus number ---------------------------------------------
-def fig_dots(total, orange, cols=10, gap=34, r=13):
-    rows = (total + cols - 1) // cols
-    body = []
-    for i in range(total):
-        row, col = divmod(i, cols)
-        fill = ORANGE if i < orange else GREY
-        body.append(f'<circle cx="{r + 4 + col * gap}" cy="{r + 4 + row * gap}" r="{r}" fill="{fill}"/>')
-    w = (cols - 1) * gap + 2 * r + 8
-    h = (rows - 1) * gap + 2 * r + 8
-    return svg(w, h, "\n".join(body))
+# Evolutionary game: computer runs of a simple model ------------------------
+def moran_runs(runs=20, N=100, r=1.1, rounds=80, seed=11):
+    """Each run starts with one cell carrying a helpful typo among N cells.
+
+    Each step one cell is lost (chosen at random) and replaced by a copy of
+    another, chosen in proportion to fitness (r for typo cells, 1 otherwise).
+    A round is N steps. Returns the typo family's share after each round.
+    Seed 11 gives 2 takeovers in 20 runs, close to the expected 1.8.
+    """
+    import random
+    rng = random.Random(seed)
+    out = []
+    for _ in range(runs):
+        k, traj = 1, [1 / N]
+        for _ in range(rounds):
+            for _ in range(N):
+                if k in (0, N):
+                    break
+                born = rng.random() < r * k / (r * k + N - k)
+                lost = rng.random() < k / N
+                k += born - lost
+            traj.append(k / N)
+        out.append(traj)
+    return out
+
+
+def fig_game():
+    W, H = 760, 540
+    x0, x1, y0, y1 = 120, 730, 470, 40   # plot area (y0 = 0%, y1 = 100%)
+    runs = moran_runs()
+    n = len(runs[0]) - 1
+    X = lambda t: x0 + (x1 - x0) * t / n
+    Y = lambda v: y0 - (y0 - y1) * v
+    body = [path(f"M{x0},{y1} V{y0} H{x1}", MUTED, 3)]
+    for v, lab in [(0, "0%"), (0.5, "50%"), (1, "100%")]:
+        body.append(text(x0 - 14, Y(v) + 10, lab, 28, MUTED, "end"))
+        if v:
+            body.append(f'<path d="M{x0},{Y(v)} H{x1}" stroke="{GREY}" stroke-width="2" stroke-dasharray="6 8"/>')
+    body.append(text((x0 + x1) / 2, H - 18, "time →", 28, MUTED))
+    body.append(text(30, (y0 + y1) / 2, "share of the blood", 28, MUTED,
+                     style=f'transform="rotate(-90 30 {(y0 + y1) / 2})"'))
+    losers = [t for t in runs if t[-1] == 0]
+    winners = [t for t in runs if t[-1] > 0]
+    for t in losers + winners:
+        end = next((i for i, v in enumerate(t) if v == 0), n)
+        pts = " ".join(f"{X(i):.1f},{Y(v):.1f}" for i, v in enumerate(t[:end + 1]))
+        col, w = (ORANGE, 6) if t in winners else ("#6f7d86", 4)
+        body.append(f'<polyline points="{pts}" fill="none" stroke="{col}" stroke-width="{w}" '
+                    f'stroke-linejoin="round" stroke-linecap="round"/>')
+    # labels sit in empty parts of the plot: top left and lower right
+    body.append(text(x0 + 24, Y(0.86), f"{len(winners)} took over", 34, ORANGE, "start", "bold"))
+    body.append(text(x0 + 250, Y(0.1), f"{len(losers)} vanished", 34, "#5d6b74", "start", "bold"))
+    return svg(W, H, "\n".join(body))
 
 
 # Slide 6: the research loop ------------------------------------------------
@@ -345,8 +387,7 @@ FIGS = {
     "puzzle.svg": fig_puzzle(False),
     "puzzle-tree.svg": fig_puzzle(True),
     "young-old.svg": fig_young_old(),
-    "share-before.svg": fig_dots(100, 25),
-    "share-after.svg": fig_dots(50, 25),
+    "game.svg": fig_game(),
     "loop.svg": fig_loop(),
 }
 
