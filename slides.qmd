@@ -144,7 +144,7 @@ All the cells that came from one ancestor form a *cell family*. Biologists call 
 :::
 
 ::: {.fragment .takeaway .center}
-Shared typos reveal relatives.
+Shared typos reveal relatives — Phylogenetics (i.e. how 'tribes' started).
 :::
 
 
